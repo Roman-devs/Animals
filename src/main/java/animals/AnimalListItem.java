@@ -125,4 +125,10 @@ public class AnimalListItem {
             next = null;
         }
     }
+
+    public void remove4(String name){
+        while (getName().equals(name)){
+            value = value
+        }
+    }
 }
