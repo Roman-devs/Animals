@@ -12,6 +12,7 @@ public class AnimalMain {
         boolean secondDuckCanSwim = secondDuck.canSwim();
         // Print Out Results
         System.out.println("Duck can Swim: " + duckCanSwim);
-        System.out.println("Second Duck is alive :" + secondDuckisAlive);
+        System.out.println("Second Duck is alive: " + secondDuckisAlive);
+        System.out.println("Second Duck can swim: " + secondDuckCanSwim);
     }
 }
