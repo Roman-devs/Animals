@@ -1,6 +1,8 @@
 package animals;
 //
 public class Animal {
+    //
+    private String name;
     private int oxygenLevel;
     private int bodyWeightKG;
     // Default Constructor
@@ -21,4 +23,13 @@ public class Animal {
     public boolean isAlive() {
         return oxygenLevel > 0;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

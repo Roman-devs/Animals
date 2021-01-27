@@ -1,6 +1,11 @@
 package animals;
 
 public class Reptile extends Animal implements Swimmer{
+
+    public Reptile(String name){
+        setName(name);
+    }
+
     boolean canSwim;
     //
     public void setCanSwim(boolean canSwim) {
