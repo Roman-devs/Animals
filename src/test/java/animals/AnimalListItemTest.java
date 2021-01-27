@@ -23,19 +23,19 @@ class AnimalListItemTest {
     @Test
     public void removeTest(){
         AnimalListItem listItem = new AnimalListItem(new Bird("Voldemort"));
-        AnimalListItem secondListItem = new AnimalListItem(new Bird("Hartmut"));
-        AnimalListItem thirdListItem = new AnimalListItem(new Bird("Peter"));
-        AnimalListItem fourthListItem = new AnimalListItem(new Reptile("Lisa"));
+        AnimalListItem secondListItem = new AnimalListItem(new Bird("Voldemort"));
+        AnimalListItem thirdListItem = new AnimalListItem(new Bird("Hartmut"));
+        AnimalListItem fourthListItem = new AnimalListItem(new Reptile("Voldemort"));
         //
         listItem.addListItemAtEnd(secondListItem);
         listItem.addListItemAtEnd(thirdListItem);
         listItem.addListItemAtEnd(fourthListItem);
         //REMOVE METHOD CALL
-        listItem.remove("Hartmut");
+        listItem.remove3("Voldemort");
         System.out.println("Test Printout");
         //
         //Expected Result
-        String expected ="Voldemort->Peter->Lisa";
+        String expected ="Hartmut";
         //
         assertEquals(expected,listItem.toString());
     }
