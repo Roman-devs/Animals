@@ -20,4 +20,24 @@ class AnimalListItemTest {
         assertEquals(expected,listItem.toString());
     }
 
+    @Test
+    public void removeTest(){
+        AnimalListItem listItem = new AnimalListItem(new Bird("Voldemort"));
+        AnimalListItem secondListItem = new AnimalListItem(new Bird("Hartmut"));
+        AnimalListItem thirdListItem = new AnimalListItem(new Bird("Peter"));
+        AnimalListItem fourthListItem = new AnimalListItem(new Reptile("Lisa"));
+        //
+        listItem.addListItemAtEnd(secondListItem);
+        listItem.addListItemAtEnd(thirdListItem);
+        listItem.addListItemAtEnd(fourthListItem);
+        //REMOVE METHOD CALL
+        listItem.remove("Hartmut");
+        System.out.println("Test Printout");
+        //
+        //Expected Result
+        String expected ="Voldemort->Peter->Lisa";
+        //
+        assertEquals(expected,listItem.toString());
+    }
+
 }
