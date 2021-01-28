@@ -128,7 +128,7 @@ public class AnimalListItem {
 
     public void remove4(String name){
         while (getName().equals(name)){
-            value = value
+            value = value;
         }
     }
 }
